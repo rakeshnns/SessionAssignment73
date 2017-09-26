@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 7.3</title>
+    <!-- STYLE for the HTML Page -->
+	<style type="text/css">
+		div{
+			text-align: center;
+			font-size: larger;
+		}
+	</style>
+
+	<script type="text/javascript">
+        var settime;                            //Global variable
+
+		//Function been called on onclick.
+		function test(){
+			document.getElementById("questions").style.display = "block";
+			
+			//SetTimeout using anonymus functionto throw alert
+			settime = setTimeout(function (){alert("Exam Time is over,Thanks.");}, 5)
+
+		}
+	</script>
+</head>
+<body>
+  
+   <div><b>Click Test Button to take online test.</b></div>
+   <div><button type="button" onclick="test()">Start Test</button></div>
+
+   <form id="questions" style="display: none;">
+   	 1. Which is the Capital City of India:<input type="text" name="ans1" >
+   	  <br>
+   	  <br>
+     2. Which is the National Animal of India:<input type="text" name="ans2" >
+   </form>
+
+
+</body>
+</html>
